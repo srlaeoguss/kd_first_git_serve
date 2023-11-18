@@ -1,0 +1,36 @@
+/* 팝업메세지 CSS */
+/* 사용이미지:
+   icons/i-close.svg
+   icons/i-call.svg
+*/
+/* 2021-10-27 메세지팝업 (layerPop.type3 응옹)  */
+.app-message {display:none; z-index:999999999; position:fixed; left:0; top:0; width:100%; height:100vh; text-align:center;}
+.app-message.on {display:block;}
+.app-message .cover {position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(255,255,255,.8);}
+.app-message .app-message-wrap { padding:50px 60px 50px; max-width:calc(100% - 40px); position:absolute; left:50%; top:50%; background:#fff;transform:translate(-50%,-50%); border-radius:25px; border:2px solid #2D7BE3; box-shadow:20px 20px 20px rgba(0,0,0,.05);}
+.app-message .app-message-wrap .close {background:url(icons/i-close.svg)center /10px no-repeat; position:absolute; top:10px; right:10px; width:40px; height:40px;}
+.app-message .app-message-inner {max-width:100%;}
+.app-message .app-message-inner h3 {font-size:24px; color:#000;font-weight:600; text-align:center;}
+.app-message .app-message-inner>* {max-width:100%;}
+.app-message .app-message-inner span.call {background:url(icons/i-call.svg)0 50% no-repeat;padding-left:20px; margin-top:20px; display:inline-block; font-size:12px;color:#958C8A; }
+.app-message .app-message-inner span.call b {color:#2e68ff; font-weight:600; }
+.app-message .app-message-inner span.mail {background:url(icons/i-call.svg)0 50% no-repeat;padding-left:20px; margin-top:10px; display:inline-block; font-size:12px;color:#958C8A; }
+.app-message .app-message-inner span.mail b {font-weight:500; color:#000;}
+.app-message .app-message-inner p {color:#000; font-weight:600; font-size:18px;}
+.app-message .app-message-inner p.err {color:#f00; text-align:center;}
+.app-message .app-message-inner p.blue {font-size:16px; color:#2E68FF; text-align:center;}
+.app-message .app-message-inner p b {font-size:18px; font-weight:700; color:#000;}
+.app-message .app-message-inner p.success {color:#000; font-weight:600; font-size:24px; text-align:center;}
+.app-message .app-message-inner .app-message-btnwrap {text-align:center; font-size:0; margin-top:20px; position:relative;}
+.app-message .app-message-inner .app-message-btnwrap.right {text-align:right;}
+.app-message .app-message-inner .app-message-btnwrap a {display:inline-block; margin:5px; padding:10px 25px; font-size:14px; font-weight:400; color:#000; background:#F1F3F9; line-height:1;border:1px solid #ddd; border-radius:5px;}
+.app-message .app-message-inner .app-message-btnwrap a:hover {background:#2E68FF; color:#fff;}
+.app-message .app-message-inner .app-message-btnwrap a.green:hover {background:#1E7BA9;}
+.app-message .app-message-inner .app-message-btnwrap a.left {position:absolute; left:0;}
+
+.modal-w700 .modal-dialog {  width: 700px; }
+.modal.modal-center { text-align: center; }
+@media screen and (min-width: 768px) {
+  .modal.modal-center:before { display: inline-block; vertical-align: middle; content: " "; height:30vh; }
+}
+.modal-dialog.modal-center { display: inline-block; vertical-align: middle; text-align: left; }

@@ -1,0 +1,318 @@
+
+
+/*fine up load*/
+.qq-uploader {
+	position: relative !important;
+	width: 100% !important;
+	height: 80px !important;
+	padding: 0 !important;
+}
+
+.qq-total-progress-bar-container {
+
+}
+
+.qq-uploader:before, .qq-uploader:after {
+	position: absolute !important;
+	width: calc(100% - 120px) !important;
+	top: 50% !important;
+	transform: translateY(-50%);
+	content: '파일을 드래그 해주세요.' !important;
+	color: var(--primary);
+	font-size: 13px !important;
+	font-weight: 300;
+	letter-spacing: -1px;
+	text-align: left !important;
+	opacity: 0.5 !important;
+	left: 55px !important;
+	display: none;
+}
+
+.qq-uploader:after {
+	left: 22px !important;
+	font-family: 'Epic2023' !important;
+	content: "\f838" !important;
+	font-size: 26px !important;
+	width: 40px !important;
+	height: 40px;
+
+/* Primary/Primary 10% */
+	background: rgba(71, 98, 240, 0.1);
+	border-radius: 999px;
+	text-align: center !important;
+}
+
+.qq-uploader-selector.qq-uploader:before {
+
+}
+
+.qq-upload-button {
+	float: none !important;
+	right: 0;
+	width: 100% !important;
+	margin: 0 !important;
+	height: 100%;
+	display: flex !important;
+	align-items: CENTER;
+	padding: 0 !important;
+	text-align: center !important;
+	justify-content: center !important;
+	background: #fff0 !important;
+	color: #fff !important;
+	
+
+/* Primary/Primary */
+	border-radius: 6px !important;
+	box-shadow: none !important;
+	position: absolute !important;
+	top: 0 !important;
+	border: 0 !important;
+	z-index: 1;
+}
+.qq-upload-button>div>i{
+    font-size: 13px;
+    color: #fff;
+    margin-right: 4px;
+}
+.qq-upload-button>* {
+	color: inherit;
+	font-size: inherit;
+}
+
+.qq-upload-list {
+	width: calc(100% - 88px);
+	height: 100%;
+	box-shadow: none !important;
+	/* overflow: hidden !important; */
+	/* max-height: 77px !important; */
+	overflow: auto !important;
+	z-index: 10;
+	position: relative;
+}
+
+.qq-upload-list li.qq-upload-fail {
+	/* max-height: 100% !important; */
+	/* overflow: auto; */
+	background: #fff !important;
+	border-top: 0 !important;
+	padding:4px;
+}
+
+.qq-upload-drop-area-selector.qq-upload-drop-area {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 94%;
+	background: rgb(71 98 240/ 20%);
+	height: 100%;
+	left: 50%;
+	border: 3px dashed var(--primary);
+	transform: translateX(-50%);
+}
+
+.qq-btn {
+	display: none;
+}
+
+.qq-upload-file {
+	vertical-align: top !important;
+	width: auto;
+	max-width: 50%;
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	height: auto !important;
+	margin: 0 !important;
+	display: inline-block !important;
+}
+
+.qq-edit-filename-icon {
+	margin: 0;
+	background:none;
+}
+
+.qq-file-name {
+	position: relative;
+	text-align: left;
+	display: flex;
+	margin: 0 -5px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.qq-file-name>*{
+    padding: 0 5px;
+    flex: 1 0 0%;
+}
+.qq-upload-size {
+	/* width: 80px; */
+	display: flex;
+	margin: 0 !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: top !important;
+	flex-grow: 0;
+	white-space: nowrap;
+	font-size: 12px;
+	flex-basis: 100px;
+	max-width: 100px;
+}
+
+.qq-edit-filename-icon:before {
+	/* content: "글씨"; */
+
+}
+
+.qq-uploader {
+
+}
+.qq-uploader>.txtbox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+}
+.qq-uploader>.txtbox>i{
+    width: 40px;
+    height: 40px;
+
+/* Primary/Primary 10% */
+    background: var(--primary-t10);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--primary);
+    margin-right: 5px;
+}
+.qq-uploader>.row {
+	height: 100%;
+	margin: 0 -4px;
+}
+
+.qq-uploader>.row>div {
+	padding: 0 4px;
+}
+
+.qq-uploader>.row>div.w-ver1 {
+	flex-basis: calc(100% - 88px);
+	max-width: calc(100% - 88px);
+}
+
+.qq-uploader>.row>div.w-ver2 {
+	flex-basis: 88px;
+	max-width: 88px;
+}
+
+.qq-uploader .custom-fine-list-box {
+	height: 100%;
+	background-color: rgba(98, 113, 235, 0.05);
+}
+.custom-fine-list-box .main-btn{
+	
+position: absolute;
+	
+top: 0;
+	
+right: 0;
+	
+height: 100%;
+	
+padding: 0px 12px;
+	
+font-size: 14px;
+	
+border-radius: 6px;
+}
+button[class*='qq-upload-'] {
+	box-shadow: none !important;
+	outline: none !important;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+	margin: 0 !important;
+	padding: 3px;
+	line-height: 1;
+}
+
+.qq-upload-delete {
+	background-color: #e65c47;
+	color: #FAFAFA;
+	border-color: #dc523d;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.55);
+}
+
+.qq-upload-delete:hover {
+	background-color: #f56b56;
+}
+
+.qq-upload-cancel {
+	background-color: #F5D7D7;
+	border-color: #e6c8c8;
+}
+
+.qq-upload-cancel:hover {
+	background-color: #ffe1e1;
+}
+
+.qq-upload-retry {
+	background-color: #EBF6E0;
+	border-color: #d2ddc7;
+}
+
+.qq-upload-retry:hover {
+	background-color: #f7ffec;
+}
+
+.qq-total-progress-bar-container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.custom-progress-bar {
+	position: relative;
+}
+
+.custom-progress-bar .qq-progress-bar-container {
+	width: calc(100% - 20px);
+}
+.custom-progress-bar .qq-progress-bar-container .qq-progress-bar{
+    margin: 0;
+    background: var(--primary);
+    border-radius: 10px;
+}
+.custom-progress-bar .qq-upload-spinner {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
+}
+/**/
+
+.small-ver .qq-uploader {height: 32px !important;}
+.small-ver .qq-uploader .custom-fine-list-box{background-color:#fff;}
+.small-ver .qq-uploader>.txtbox{
+	transform: translateY(-50%);
+	left: 16px;
+	font-size: 11px;
+}
+.small-ver .qq-uploader>.txtbox>i{
+	font-size: 16px;
+	width: 24px;
+	height: 24px;
+}
+.small-ver .qq-uploader .qq-upload-list{
+	border-radius: 8px;
+	width: calc(100% - 120px);
+	background: rgba(98, 113, 235, 0.05);
+}
+.small-ver .custom-fine-list-box .main-btn{width: 102px;}

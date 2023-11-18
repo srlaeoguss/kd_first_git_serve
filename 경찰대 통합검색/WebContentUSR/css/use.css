@@ -1,0 +1,51 @@
+.draw-design-box {
+  margin: 0 -7px;
+  height: 100%;
+}
+.draw-design-box > div {
+  padding: 0 7px;
+}
+.draw-design-box > .left {
+  flex-basis: 1170px;
+  max-width: 1170px;
+}
+.draw-design-box > .right {
+  margin-top: -17px;
+  margin-bottom: -17px;
+  height: calc(100% + 34px);
+  flex-basis: calc(100% - 1170px);
+  max-width: calc(100% - 1170px);
+}
+.draw-design-box > .right .tol-box {
+  border-left: 1px solid #D6D6D6;
+  background-color: #FFFFFF;
+  height: 100%;
+  padding: 20px;
+}
+.draw-design-box .clone-canvas.tol-ver {
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 80px 0 rgba(166, 169, 185, 0.1);
+  margin-bottom: 15px;
+}
+.draw-design-box #canvas {
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 80px 0 rgba(166, 169, 185, 0.1);
+}
+
+/*
+.clone-canvas .select span:before,
+.clone-canvas .select.yline:before {
+    content:'';
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(71,98,240,0.2);
+    border: 2px dashed #4762f0;
+}
+*//*# sourceMappingURL=use.css.map */
